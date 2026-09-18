@@ -5,8 +5,8 @@ from fastapi import FastAPI, File, Request, UploadFile
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
-from openai import AsyncOpenAI
 import os
+import httpx
 
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -19,13 +19,6 @@ templates = Jinja2Templates(directory=str(BASE_DIR / "templates"))
 
 class TranslationRequest(BaseModel):
     arabic: str
-
-
-def get_openai_client() -> AsyncOpenAI:
-    api_key = os.getenv("OPENAI_API_KEY")
-    if not api_key:
-        raise RuntimeError("OPENAI_API_KEY is not configured")
-    return AsyncOpenAI(api_key=api_key)
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -50,14 +43,18 @@ async def upload_audio(audio: UploadFile = File(...)):
 
 @app.post("/translate")
 async def translate(request: TranslationRequest):
-    client = get_openai_client()
-    response = await client.responses.create(
-        model=os.getenv("OPENAI_TRANSLATION_MODEL", "gpt-5-mini"),
-        instructions=(
-            "Translate Arabic Friday sermon speech into clear, faithful English. "
-            "Preserve Islamic terms, names, quotations, and attribution. "
-            "Return only the English translation; do not add commentary."
-        ),
-        input=request.arabic,
-    )
-    return {"arabic": request.arabic, "english": response.output_text}
+    endpoint = os.getenv("LIBRETRANSLATE_URL", "http://127.0.0.1:5000").rstrip("/")
+    payload = {
+        "q": request.arabic,
+        "source": "ar",
+        "target": "en",
+        "format": "text",
+    }
+    api_key = os.getenv("LIBRETRANSLATE_API_KEY")
+    if api_key:
+        payload["api_key"] = api_key
+    async with httpx.AsyncClient(timeout=20) as client:
+        response = await client.post(f"{endpoint}/translate", json=payload)
+        response.raise_for_status()
+    result = response.json()
+    return {"arabic": request.arabic, "english": result["translatedText"]}

@@ -26,6 +26,11 @@ test('operator controls are wired', () => {
   assert.match(template, /Copy latest/);
 });
 
+test('translation backend is configured for LibreTranslate', () => {
+  assert.match(template, /fetch\('\/translate'/);
+  assert.match(await readFile(new URL('../app.py', import.meta.url), 'utf8'), /LIBRETRANSLATE_URL/);
+});
+
 test('Arabic sermon evaluation fixture is loaded and structurally valid', () => {
   assert.equal(samples.length, 5);
   for (const sample of samples) {
