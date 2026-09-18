@@ -1,0 +1,39 @@
+[
+  {
+    "id": "taqwa-01",
+    "arabic": "أوصيكم ونفسي بتقوى الله",
+    "referenceEnglish": "I advise you and myself to have God-consciousness.",
+    "expectedTerms": ["التقوى"],
+    "notes": "Common opening exhortation; keep the inclusive ‘you and myself’ meaning."
+  },
+  {
+    "id": "faith-01",
+    "arabic": "إن الإيمان قول وعمل",
+    "referenceEnglish": "Indeed, faith is word and deed.",
+    "expectedTerms": ["الإيمان"],
+    "notes": "Short doctrinal sentence; avoid expanding beyond the spoken text."
+  },
+  {
+    "id": "community-01",
+    "arabic": "إنما المؤمنون إخوة، فأصلحوا بين أخويكم",
+    "referenceEnglish": "The believers are but brothers, so reconcile between your brothers.",
+    "expectedTerms": ["الأمة"],
+    "notes": "Community-oriented phrasing; preserve the call to reconciliation."
+  },
+  {
+    "id": "quran-cue-01",
+    "arabic": "قال الله تعالى: إن الله يأمر بالعدل والإحسان",
+    "referenceEnglish": "Allah, Most High, says: Indeed, Allah commands justice and excellence.",
+    "expectedTerms": [],
+    "quoteCue": "Qur’an quotation cue",
+    "notes": "The quotation should be detected and verified against an approved source translation."
+  },
+  {
+    "id": "hadith-cue-01",
+    "arabic": "قال رسول الله صلى الله عليه وسلم: إنما الأعمال بالنيات",
+    "referenceEnglish": "The Messenger of Allah, peace and blessings be upon him, said: Deeds are judged by intentions.",
+    "expectedTerms": [],
+    "quoteCue": "Hadith quotation cue",
+    "notes": "Preserve the attribution and flag the source for verification."
+  }
+]
