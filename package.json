@@ -1,0 +1,9 @@
+{
+  "name": "khutbaht",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "test:smoke": "node --test tests/smoke.test.mjs"
+  }
+}
