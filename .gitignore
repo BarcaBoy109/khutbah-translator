@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Local development output
+instance/
+uploads/
+recordings/
+*.log
+
+# Editors and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Frontend tooling
+node_modules/
+dist/
+build/
+.cache/
+
+# Test and coverage output
+.pytest_cache/
+.coverage
+htmlcov/
