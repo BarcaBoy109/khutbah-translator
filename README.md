@@ -1,6 +1,6 @@
-# KhutbahT
+# Khutbah Translator
 
-KhutbahT is a live Arabic-to-English translation companion for Friday sermons.
+Khutbah Translator is a live Arabic-to-English translation companion for Friday sermons.
 
 ## Current status
 
