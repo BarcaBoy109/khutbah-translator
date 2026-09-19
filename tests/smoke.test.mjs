@@ -26,9 +26,9 @@ test('operator controls are wired', () => {
   assert.match(template, /Copy latest/);
 });
 
-test('translation backend is configured for LibreTranslate', async () => {
+test('translation backend is configured for TranslateAPI', async () => {
   assert.match(template, /fetch\('\/translate'/);
-  assert.match(await readFile(new URL('../app.py', import.meta.url), 'utf8'), /LIBRETRANSLATE_URL/);
+  assert.match(await readFile(new URL('../app.py', import.meta.url), 'utf8'), /TRANSLATEAPI_URL/);
 });
 
 test('Arabic sermon evaluation fixture is loaded and structurally valid', () => {

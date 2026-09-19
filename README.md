@@ -4,14 +4,14 @@ Khutbah Translator is a live Arabic-to-English translation companion for Friday 
 
 ## Current status
 
-This is an early prototype. Browser speech recognition captures Arabic, and the backend sends finalized segments to a configurable LibreTranslate server. Qur’an and hadith passages are flagged for verification and should be matched against approved source translations.
+This is an early prototype. Browser speech recognition captures Arabic, and the backend sends finalized segments to TranslateAPI.ai. Qur’an and hadith passages are flagged for verification and should be matched against approved source translations.
 
 ## Requirements
 
 - Python 3.11+
 - Node.js 20+ for smoke tests
 - A browser with Web Speech API support
-- LibreTranslate, locally or hosted
+- TranslateAPI.ai account and API key
 
 ## Run locally
 
@@ -19,13 +19,6 @@ This is an early prototype. Browser speech recognition captures Arabic, and the 
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
-```
-
-In a separate terminal, start local LibreTranslate:
-
-```powershell
-pip install libretranslate
-libretranslate
 ```
 
 Start KhutbahT:
@@ -41,11 +34,11 @@ Open http://127.0.0.1:8000.
 Set these environment variables or copy `.env.example` to `.env`:
 
 ```text
-LIBRETRANSLATE_URL=http://127.0.0.1:5000
-LIBRETRANSLATE_API_KEY=
+TRANSLATEAPI_URL=https://api.translateapi.ai/api/v1/translate/
+TRANSLATEAPI_KEY=<your-api-key>
 ```
 
-For hosted LibreTranslate, change the URL and add its API key if required. Keep the key on the server; never put it in the frontend.
+Keep the API key on the server; never put it in the frontend.
 
 ## Deploy on Render
 
@@ -59,8 +52,8 @@ Start command: uvicorn app:app --host 0.0.0.0 --port $PORT
 Set:
 
 ```text
-LIBRETRANSLATE_URL=https://libretranslate.com
-LIBRETRANSLATE_API_KEY=<your-provider-key>
+TRANSLATEAPI_URL=https://api.translateapi.ai/api/v1/translate/
+TRANSLATEAPI_KEY=<your-api-key>
 ```
 
 Render’s free plan is suitable for an MVP but may sleep when idle. Audio uploads are currently stored locally and should move to object storage before production use.

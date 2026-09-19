@@ -43,18 +43,24 @@ async def upload_audio(audio: UploadFile = File(...)):
 
 @app.post("/translate")
 async def translate(request: TranslationRequest):
-    endpoint = os.getenv("LIBRETRANSLATE_URL", "http://127.0.0.1:5000").rstrip("/")
+    endpoint = os.getenv(
+        "TRANSLATEAPI_URL",
+        "https://api.translateapi.ai/api/v1/translate/",
+    )
     payload = {
-        "q": request.arabic,
-        "source": "ar",
-        "target": "en",
-        "format": "text",
+        "text": request.arabic,
+        "source_language": "ar",
+        "target_language": "en",
     }
-    api_key = os.getenv("LIBRETRANSLATE_API_KEY")
-    if api_key:
-        payload["api_key"] = api_key
+    api_key = os.getenv("TRANSLATEAPI_KEY")
+    if not api_key:
+        raise RuntimeError("TRANSLATEAPI_KEY is not configured")
     async with httpx.AsyncClient(timeout=20) as client:
-        response = await client.post(f"{endpoint}/translate", json=payload)
+        response = await client.post(
+            endpoint,
+            json=payload,
+            headers={"Authorization": f"Bearer {api_key}"},
+        )
         response.raise_for_status()
     result = response.json()
-    return {"arabic": request.arabic, "english": result["translatedText"]}
+    return {"arabic": request.arabic, "english": result["translated_text"]}
