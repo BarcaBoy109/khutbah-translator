@@ -2,6 +2,8 @@
 
 Khutbah Translator is a live Arabic-to-English translation companion for Friday sermons.
 
+[Open the live app](https://khutbah-translator.onrender.com/)
+
 ## Current status
 
 This is an early prototype. Browser speech recognition captures Arabic, and the backend sends finalized segments to TranslateAPI.ai. Qur’an and hadith passages are flagged for verification and should be matched against approved source translations.
