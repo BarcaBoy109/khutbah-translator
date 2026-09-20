@@ -1,0 +1,27 @@
+{
+  "base_model": "Helsinki-NLP/opus-mt-ar-en",
+  "output_dir": "model/artifacts/khutbah-ar-en",
+  "train_file": "model/data/processed/train.jsonl",
+  "validation_file": "model/data/processed/validation.jsonl",
+  "test_file": "model/data/processed/test.jsonl",
+  "max_source_length": 256,
+  "max_target_length": 256,
+  "learning_rate": 0.00003,
+  "weight_decay": 0.01,
+  "num_train_epochs": 4,
+  "per_device_train_batch_size": 8,
+  "per_device_eval_batch_size": 8,
+  "gradient_accumulation_steps": 4,
+  "generation_num_beams": 4,
+  "seed": 42,
+  "approved_licenses": [
+    "CC0-1.0",
+    "CC-BY-2.0",
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "ODC-PDDL-1.0",
+    "PUBLIC-DOMAIN",
+    "PERMISSION-GRANTED"
+  ]
+}
+

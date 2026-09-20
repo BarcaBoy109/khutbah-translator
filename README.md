@@ -8,6 +8,12 @@ Khutbah Translator is a live Arabic-to-English translation companion for Friday 
 
 This is an early prototype. Browser speech recognition captures Arabic, and the backend sends finalized segments to TranslateAPI.ai. Qur’an and hadith passages are flagged for verification and should be matched against approved source translations.
 
+An independent specialised-model track now lives under `model/`. It includes
+Islamic Network corpus acquisition, provenance and rights gates, document
+extraction, review-candidate alignment, Marian fine-tuning, and religious-term
+evaluation. The live application remains on TranslateAPI.ai until the local
+model passes its promotion gates.
+
 ## Requirements
 
 - Python 3.11+
@@ -74,7 +80,9 @@ app.py                         FastAPI application
 templates/index.html           Translation interface
 tests/fixtures/                Arabic sermon evaluation samples
 tests/smoke.test.mjs           Node smoke tests
+model/                         Independent corpus and model-training pipeline
 requirements.txt               Python dependencies
+requirements-model.txt         Optional model-training dependencies
 Dockerfile                     Container deployment setup
 ```
 

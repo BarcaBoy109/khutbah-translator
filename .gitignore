@@ -19,6 +19,16 @@ uploads/
 recordings/
 *.log
 
+# Translation model data, checkpoints, and local caches
+model/data/raw/*
+!model/data/raw/.gitkeep
+model/data/processed/*
+!model/data/processed/.gitkeep
+model/artifacts/
+model/checkpoints/
+.venv-model/
+.huggingface/
+
 # Local databases
 *.sqlite3
 *.db
