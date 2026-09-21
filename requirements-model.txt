@@ -1,8 +1,9 @@
 # Model training is intentionally separate from the lightweight web app.
-torch>=2.2,<3
-transformers>=4.46,<5
+torch>=2.6,<3
+transformers==4.57.1
 datasets>=3,<5
 accelerate>=1,<2
 sentencepiece>=0.2,<1
 sacrebleu>=2.4,<3
 pdfplumber>=0.11,<1
+peft==0.17.1

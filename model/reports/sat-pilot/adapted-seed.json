@@ -1,0 +1,92 @@
+{
+  "model": "model/artifacts/khutbah-sat-pilot",
+  "examples": 5,
+  "synthetic_references": 0,
+  "device": "cuda",
+  "seconds": 0.7941726999997627,
+  "bleu": 21.97822588973585,
+  "chrf_pp": 47.634441172802475,
+  "term_accuracy": 0.8571428571428571,
+  "outputs": [
+    {
+      "id": "taqwa-01",
+      "document_id": "manual-eval-openings",
+      "arabic": "أوصيكم ونفسي بتقوى الله",
+      "english": "I advise you and myself to be mindful of Allah.",
+      "source": "project-human-review",
+      "license": "PERMISSION-GRANTED",
+      "domain": "khutbah",
+      "expected_terms": [
+        "Allah"
+      ],
+      "quote_type": "none",
+      "notes": "Common opening exhortation; preserve the inclusive wording.",
+      "prediction": "I commend you and my soul for God's piety."
+    },
+    {
+      "id": "faith-01",
+      "document_id": "manual-eval-doctrine",
+      "arabic": "إن الإيمان قول وعمل",
+      "english": "Indeed, faith is word and deed.",
+      "source": "project-human-review",
+      "license": "PERMISSION-GRANTED",
+      "domain": "khutbah",
+      "expected_terms": [
+        "faith"
+      ],
+      "quote_type": "none",
+      "notes": "Do not expand beyond the spoken text.",
+      "prediction": "Faith is a word and action."
+    },
+    {
+      "id": "community-01",
+      "document_id": "manual-eval-community",
+      "arabic": "إنما المؤمنون إخوة، فأصلحوا بين أخويكم",
+      "english": "The believers are but brothers, so make peace between your brothers.",
+      "source": "project-human-review",
+      "license": "PERMISSION-GRANTED",
+      "domain": "khutbah",
+      "expected_terms": [
+        "believers"
+      ],
+      "quote_type": "quran",
+      "reference": "Qur'an 49:10",
+      "notes": "Evaluation seed; verify final wording against the project's approved Qur'an translation.",
+      "prediction": "Believers are brothers. Make peace between your brothers."
+    },
+    {
+      "id": "quran-cue-01",
+      "document_id": "manual-eval-quotes",
+      "arabic": "قال الله تعالى: إن الله يأمر بالعدل والإحسان",
+      "english": "Allah, Most High, says: Indeed, Allah commands justice and excellence.",
+      "source": "project-human-review",
+      "license": "PERMISSION-GRANTED",
+      "domain": "khutbah",
+      "expected_terms": [
+        "Allah",
+        "justice"
+      ],
+      "quote_type": "quran",
+      "reference": "Qur'an 16:90",
+      "notes": "Detect and reference-match the quotation before production use.",
+      "prediction": "Allah said , \" Indeed , Allah commands justice and goodness . \""
+    },
+    {
+      "id": "hadith-cue-01",
+      "document_id": "manual-eval-quotes",
+      "arabic": "قال رسول الله صلى الله عليه وسلم: إنما الأعمال بالنيات",
+      "english": "The Messenger of Allah, peace and blessings be upon him, said: Deeds are judged by intentions.",
+      "source": "project-human-review",
+      "license": "PERMISSION-GRANTED",
+      "domain": "khutbah",
+      "expected_terms": [
+        "Messenger of Allah",
+        "intentions"
+      ],
+      "quote_type": "hadith",
+      "reference": "Sahih al-Bukhari 1",
+      "notes": "Preserve attribution and honorific; verify against the approved hadith translation.",
+      "prediction": "He said , \" The Messenger of Allah has said , \" Acts are only intentions ."
+    }
+  ]
+}

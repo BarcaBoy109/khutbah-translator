@@ -60,7 +60,7 @@ def main() -> None:
     parser.add_argument("--min-source-chars", type=int, default=8)
     parser.add_argument("--max-source-chars", type=int, default=1200)
     args = parser.parse_args()
-    if args.validation_ratio + args.test_ratio >= 1:
+    if min(args.validation_ratio, args.test_ratio) < 0 or args.validation_ratio + args.test_ratio >= 1:
         parser.error("validation and test ratios must sum to less than 1")
 
     config = json.loads(args.config.read_text(encoding="utf-8"))
@@ -149,4 +149,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

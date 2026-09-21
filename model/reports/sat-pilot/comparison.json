@@ -1,0 +1,36 @@
+{
+  "production_approved": false,
+  "reason": "Small pilot; AI-translated references; bilingual and quotation review pending",
+  "evaluations": {
+    "sat": {
+      "examples": 20,
+      "synthetic_references": 20,
+      "baseline": {
+        "bleu": 14.565662172743915,
+        "chrf_pp": 35.968442796744284,
+        "term_accuracy": null
+      },
+      "adapted": {
+        "bleu": 17.7492382841311,
+        "chrf_pp": 39.36720873829613,
+        "term_accuracy": null
+      },
+      "chrf_pp_delta": 3.3987659415518436
+    },
+    "seed": {
+      "examples": 5,
+      "synthetic_references": 0,
+      "baseline": {
+        "bleu": 12.141046499574815,
+        "chrf_pp": 35.6454393296119,
+        "term_accuracy": 0.5714285714285714
+      },
+      "adapted": {
+        "bleu": 21.97822588973585,
+        "chrf_pp": 47.634441172802475,
+        "term_accuracy": 0.8571428571428571
+      },
+      "chrf_pp_delta": 11.989001843190579
+    }
+  }
+}

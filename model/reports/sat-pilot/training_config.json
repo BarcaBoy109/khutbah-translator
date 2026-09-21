@@ -1,0 +1,36 @@
+{
+  "base_model": "Helsinki-NLP/opus-mt-ar-en",
+  "base_revision": "c5b2a50db78d6be98ae207223f8d4f63bc7a0ff1",
+  "output_dir": "model/artifacts/khutbah-sat-pilot",
+  "train_file": "model/data/processed/sat-pilot/train.jsonl",
+  "validation_file": "model/data/processed/sat-pilot/validation.jsonl",
+  "test_file": "model/data/processed/sat-pilot/test.jsonl",
+  "max_source_length": 192,
+  "max_target_length": 192,
+  "learning_rate": 0.0002,
+  "weight_decay": 0.01,
+  "num_train_epochs": 8,
+  "per_device_train_batch_size": 1,
+  "per_device_eval_batch_size": 2,
+  "gradient_accumulation_steps": 8,
+  "generation_num_beams": 4,
+  "seed": 42,
+  "lora": {
+    "r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ]
+  },
+  "gradient_checkpointing": true,
+  "approved_licenses": [
+    "CC-BY-4.0"
+  ],
+  "allow_synthetic_targets": true,
+  "experiment_status": "pilot; AI-translated SAT targets; not approved for production",
+  "resolved_base_revision": "c5b2a50db78d6be98ae207223f8d4f63bc7a0ff1",
+  "max_train_samples": null,
+  "actual_train_examples": 136
+}

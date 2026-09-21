@@ -4,7 +4,61 @@ This directory contains the independent training track for a specialised
 Arabic-to-English Khutbah translator. The production application still uses
 TranslateAPI.ai; nothing here is imported by `app.py` yet.
 
-## Approach
+## Reproduce the SAT pilot
+
+The SAT pilot uses real Friday-sermon Arabic transcripts with explicitly
+AI-produced English translations. It is a development experiment, not a
+human-reviewed translation corpus. Source: Samah Abbas (2023),
+[Sermon_audio_and_text_dataset (SAT), V1](https://doi.org/10.17632/fnz5bt24st.1),
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+```powershell
+# Run from the repository root after installing requirements-model.txt.
+.\.venv-model\Scripts\python.exe model/scripts/fetch_sat.py --context-segments 3
+.\.venv-model\Scripts\python.exe -u model/scripts/run_pilot.py
+```
+
+The importer downloads only text, verifies publisher SHA-256 checksums, samples
+four locations per sermon, and joins three adjacent transcript chunks at each
+location. Annotations are in `data/annotations/sat-pilot-en.tsv`; source-text
+fingerprints prevent applying translations to changed transcripts. Unclear
+fragments and a likely duplicate sermon are excluded. Arabic spelling is retained.
+All quotation translations remain unverified, and no hadith authenticity labels
+are inferred.
+
+The selected 171 examples from 49 sermons split into 136 training examples
+(40 sermons), 15 validation examples (4 sermons), and 20 test examples
+(5 sermons). The five existing evaluation seed examples remain separate.
+Both the validation and SAT test references are AI translations; their scores
+are a consistency check, not independent evidence of human translation quality.
+
+`config.pilot.json` pins the base model revision and enables rank-8 LoRA on
+attention query/value projections, batch size 1, mixed precision on CUDA,
+gradient accumulation, and gradient checkpointing for a 4 GB GPU. The trainer
+checks licenses and cross-split overlap again, rejects overlap with the protected
+seed, and refuses silent token truncation. Only this pilot config explicitly
+opts into synthetic targets.
+
+`run_pilot.py` runs baseline evaluation, training, and the same evaluations of
+the adapter sequentially. It saves the adapter/tokenizer under
+`model/artifacts/khutbah-sat-pilot/`, and comparison reports, data hashes,
+effective configuration, environment, and dependency versions under
+`model/reports/sat-pilot/`. Existing trained adapters are protected from overwrite.
+The weights and raw downloads remain local and ignored by Git.
+
+```powershell
+$env:HF_HOME = Join-Path (Get-Location) '.huggingface'
+.\.venv-model\Scripts\python.exe model/scripts/translate.py `
+  --model model/artifacts/khutbah-sat-pilot `
+  --text "اللهم بارك على محمد وعلى آل محمد"
+```
+
+The adapter needs its original base checkpoint and `peft` at inference time.
+Read the recorded comparison and [model card](MODEL_CARD.md) before making any
+deployment decision. This pilot improves aggregate scores but fails quotation
+and translation-quality checks; the model card records specific failures.
+
+## Baseline approach
 
 The first baseline fine-tunes
 [`Helsinki-NLP/opus-mt-ar-en`](https://huggingface.co/Helsinki-NLP/opus-mt-ar-en),

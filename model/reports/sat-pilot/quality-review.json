@@ -1,0 +1,18 @@
+{
+  "review_type": "AI inspection of saved outputs; not bilingual human certification",
+  "production_approved": false,
+  "quotation_gate_passed": false,
+  "adapter_sha256": "f4f7a6116466b027cf1a1a890d684e574e4bfa49eed5d8e96a3c27cb095cf0a2",
+  "observed_failures": [
+    {"id": "sat-sermon_1-136", "issue": "Nonsensical translation in a Qur'anic passage about parents"},
+    {"id": "hadith-cue-01", "issue": "Honorific omitted and meaning of deeds and intentions distorted"},
+    {"id": "taqwa-01", "issue": "Awkward phrasing and mistranslation of myself as my soul"}
+  ],
+  "offline_cli_check": {
+    "passed": true,
+    "input": "أيها المسلمون، حافظوا على الأمانة وأحسنوا إلى جيرانكم.",
+    "output": "Muslims, keep your trust and be good to your neighbours."
+  },
+  "pipeline_tests": {"passed": 12, "failed": 0},
+  "next_data_requirement": "Larger human-reviewed sermon translation corpus and independent test set"
+}

@@ -1,0 +1,20 @@
+{
+  "train": {
+    "examples": 136,
+    "documents": 40,
+    "synthetic_targets": 136,
+    "sha256": "0ba62fb32a7f3b8373b5d55cdc9734b31f061d51552241135ace998a3cd61692"
+  },
+  "validation": {
+    "examples": 15,
+    "documents": 4,
+    "synthetic_targets": 15,
+    "sha256": "87f04245e9b209d3bfb1d72044b6a99208522efb948a9c9fe325b9db63a76f5e"
+  },
+  "test": {
+    "examples": 20,
+    "documents": 5,
+    "synthetic_targets": 20,
+    "sha256": "21e8cfde4c852193b52d9e37c2e225c7e804df711ca79324813ae01d447c0308"
+  }
+}

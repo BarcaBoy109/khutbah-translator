@@ -1,0 +1,6 @@
+{
+  "python": "3.13.0",
+  "torch": "2.7.1+cu128",
+  "cuda": "12.8",
+  "device": "NVIDIA GeForce RTX 3050 Laptop GPU"
+}

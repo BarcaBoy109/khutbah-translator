@@ -1,0 +1,772 @@
+{
+  "model": "model/artifacts/khutbah-sat-pilot",
+  "examples": 20,
+  "synthetic_references": 20,
+  "device": "cuda",
+  "seconds": 3.7799038999983168,
+  "bleu": 17.7492382841311,
+  "chrf_pp": 39.36720873829613,
+  "term_accuracy": null,
+  "outputs": [
+    {
+      "arabic": "وقل لهما قولا كريما واخفض لهما جناح الذل من الرحمة وقل ربي ارحمهما كما ربياني صغيرا",
+      "attribution": "Abbas, Samah (2023), Sermon_audio_and_text_dataset (SAT), Mendeley Data, V1, doi:10.17632/fnz5bt24st.1",
+      "changes": "Three adjacent transcript chunks joined; English translation added; no Arabic spelling repairs",
+      "dataset_version": 1,
+      "document_id": "sat-sermon_1",
+      "domain": "khutbah",
+      "english": "Speak to them graciously, lower to them the wing of humility out of mercy, and say: My Lord, have mercy on them as they raised me when I was small.",
+      "id": "sat-sermon_1-136",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "quote_type": "unreviewed",
+      "review_status": "AI-only; bilingual human review pending",
+      "source": "https://data.mendeley.com/datasets/fnz5bt24st/1",
+      "source_filename": "136_sermon_1.txt",
+      "source_segments": [
+        {
+          "filename": "135_sermon_1.txt",
+          "sha256": "dd6a40d17b6d10cd0a22d3633a568ef9f12a741d790b98216faa653c73e537ed",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/c6b93500-f32f-47c1-830f-9a955ad25ca2/file_downloaded"
+        },
+        {
+          "filename": "136_sermon_1.txt",
+          "sha256": "75d0d703fc17b5f13f00bc71882b6d70fdace599becb7a15f5a2341ff569a493",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/5852fa3f-d8ae-4e3b-8c19-152197fc774e/file_downloaded"
+        },
+        {
+          "filename": "137_sermon_1.txt",
+          "sha256": "5b1489be5a6585c8f514903d3ef0196ccab6f11ec5b1c61563f769695455c185",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/4a3ae55b-ee5f-4907-b2d6-dfab9c455dc1/file_downloaded"
+        }
+      ],
+      "source_url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/5852fa3f-d8ae-4e3b-8c19-152197fc774e/file_downloaded",
+      "split": "test",
+      "synthetic_target": true,
+      "translation_method": "Codex AI translation of the supplied Arabic excerpt",
+      "prediction": "Say to them a kind word, and lower for them the sin of humiliation from mercy, and say, \"My Lord, have mercy on them, as my shrimp is small.\""
+    },
+    {
+      "arabic": "إني لها بعيرها المذلل وهو يقول إني لها بعيرها المذلل",
+      "attribution": "Abbas, Samah (2023), Sermon_audio_and_text_dataset (SAT), Mendeley Data, V1, doi:10.17632/fnz5bt24st.1",
+      "changes": "Three adjacent transcript chunks joined; English translation added; no Arabic spelling repairs",
+      "dataset_version": 1,
+      "document_id": "sat-sermon_1",
+      "domain": "khutbah",
+      "english": "I am her submissive camel. He says: I am her submissive camel.",
+      "id": "sat-sermon_1-273",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "quote_type": "unreviewed",
+      "review_status": "AI-only; bilingual human review pending",
+      "source": "https://data.mendeley.com/datasets/fnz5bt24st/1",
+      "source_filename": "273_sermon_1.txt",
+      "source_segments": [
+        {
+          "filename": "272_sermon_1.txt",
+          "sha256": "d862f70c76077f786b50bef2256051d5b5c09b356424e773ee9b365c9d197e3f",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/3b6b24e4-3698-4c61-b9e1-cb2dca41225f/file_downloaded"
+        },
+        {
+          "filename": "273_sermon_1.txt",
+          "sha256": "3a393135f08fa275e1565de1fcdf1985e9251304706cd0f99e2a7f3cf215aa81",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/9f174478-7b4b-47f1-9b2c-9461b7c38fa0/file_downloaded"
+        },
+        {
+          "filename": "274_sermon_1.txt",
+          "sha256": "d862f70c76077f786b50bef2256051d5b5c09b356424e773ee9b365c9d197e3f",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/d4f174cf-dfa9-447b-944c-e3c00c83e907/file_downloaded"
+        }
+      ],
+      "source_url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/9f174478-7b4b-47f1-9b2c-9461b7c38fa0/file_downloaded",
+      "split": "test",
+      "synthetic_target": true,
+      "translation_method": "Codex AI translation of the supplied Arabic excerpt",
+      "prediction": "I have her humbled beard, and he says that I have her humbled beard."
+    },
+    {
+      "arabic": "كيف يفعل بهما ذلك وهما من غسلا بأيديهما عنه الأذى وآثراه على نفسيهما",
+      "attribution": "Abbas, Samah (2023), Sermon_audio_and_text_dataset (SAT), Mendeley Data, V1, doi:10.17632/fnz5bt24st.1",
+      "changes": "Three adjacent transcript chunks joined; English translation added; no Arabic spelling repairs",
+      "dataset_version": 1,
+      "document_id": "sat-sermon_1",
+      "domain": "khutbah",
+      "english": "How can he do that to them, when they are the ones who washed away his dirt with their own hands and put him before themselves?",
+      "id": "sat-sermon_1-409",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "quote_type": "unreviewed",
+      "review_status": "AI-only; bilingual human review pending",
+      "source": "https://data.mendeley.com/datasets/fnz5bt24st/1",
+      "source_filename": "409_sermon_1.txt",
+      "source_segments": [
+        {
+          "filename": "408_sermon_1.txt",
+          "sha256": "d9558c4cc2c78e5308bbc8c92da1f474864b8b37ba45f80827d20d935f3afbd6",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/df7fb297-2d9a-4075-9371-a037755f7f66/file_downloaded"
+        },
+        {
+          "filename": "409_sermon_1.txt",
+          "sha256": "c8707a6f3f9c98090d8a75f2e0187608e55bcaae9306ea372a3b0b0a1b7b1e1e",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/c239638a-ca15-4fd2-8bdb-75db7de5d78d/file_downloaded"
+        },
+        {
+          "filename": "410_sermon_1.txt",
+          "sha256": "bf7b42e46b6133f5c6cf71d1df7b8e7d4930787af4e85cbb6e2f9fef7d0dcfec",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/5f2921ce-e64b-4db4-9e25-cdd53b57cd37/file_downloaded"
+        }
+      ],
+      "source_url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/c239638a-ca15-4fd2-8bdb-75db7de5d78d/file_downloaded",
+      "split": "test",
+      "synthetic_target": true,
+      "translation_method": "Codex AI translation of the supplied Arabic excerpt",
+      "prediction": "How can he do that to them when they were washed away by their own hands, harming him and influencing them against their own souls?"
+    },
+    {
+      "arabic": "وسماء ظليلة إن سألوك فأعطهم وإن استعتبوك فأعتبهم",
+      "attribution": "Abbas, Samah (2023), Sermon_audio_and_text_dataset (SAT), Mendeley Data, V1, doi:10.17632/fnz5bt24st.1",
+      "changes": "Three adjacent transcript chunks joined; English translation added; no Arabic spelling repairs",
+      "dataset_version": 1,
+      "document_id": "sat-sermon_1",
+      "domain": "khutbah",
+      "english": "And a sheltering sky. If they ask you, give to them; if they ask you to make amends, make amends.",
+      "id": "sat-sermon_1-546",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "quote_type": "unreviewed",
+      "review_status": "AI-only; bilingual human review pending",
+      "source": "https://data.mendeley.com/datasets/fnz5bt24st/1",
+      "source_filename": "546_sermon_1.txt",
+      "source_segments": [
+        {
+          "filename": "545_sermon_1.txt",
+          "sha256": "0deb5d89ebabd4b39dd877f695a0fcd4cd202b06e4a0bc5e137446431276bbd0",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/8a7ee722-f22b-4295-9455-7cd6bc6e6ccd/file_downloaded"
+        },
+        {
+          "filename": "546_sermon_1.txt",
+          "sha256": "39d6e932c334d9a624a6081eef74a638b2c9f62ec68d935efe1a19437f442d99",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/e51f9151-67cb-4d41-a20f-6f48f699071d/file_downloaded"
+        },
+        {
+          "filename": "547_sermon_1.txt",
+          "sha256": "db86b510e2d67363fa7460a595287a81bed404e34024a8b790fadbd816c50c88",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/e1f65cd0-e8f0-4fa5-b448-766168ca0cb6/file_downloaded"
+        }
+      ],
+      "source_url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/e51f9151-67cb-4d41-a20f-6f48f699071d/file_downloaded",
+      "split": "test",
+      "synthetic_target": true,
+      "translation_method": "Codex AI translation of the supplied Arabic excerpt",
+      "prediction": "Heaven, if they ask you, give them, and if they question you, consider them."
+    },
+    {
+      "arabic": "أن الشياطين ما فتئت تترصد لبني آدم تجتالهم وتغويهم عن دين الله وإخلاص العبادة له وقد أقسم إبليس على ذلك",
+      "attribution": "Abbas, Samah (2023), Sermon_audio_and_text_dataset (SAT), Mendeley Data, V1, doi:10.17632/fnz5bt24st.1",
+      "changes": "Three adjacent transcript chunks joined; English translation added; no Arabic spelling repairs",
+      "dataset_version": 1,
+      "document_id": "sat-sermon_10",
+      "domain": "khutbah",
+      "english": "The devils have never ceased lying in wait for the children of Adam, leading them astray from Allah's religion and from worshipping Him sincerely. Iblis swore to do so.",
+      "id": "sat-sermon_10-86",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "quote_type": "unreviewed",
+      "review_status": "AI-only; bilingual human review pending",
+      "source": "https://data.mendeley.com/datasets/fnz5bt24st/1",
+      "source_filename": "86_sermon_10.txt",
+      "source_segments": [
+        {
+          "filename": "85_sermon_10.txt",
+          "sha256": "c7b4a93657801f4287241d015587503105c274a6332be86bc345320a749d01b5",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/41424f82-6fcc-42a0-a0a7-68bec4346591/file_downloaded"
+        },
+        {
+          "filename": "86_sermon_10.txt",
+          "sha256": "4e5e850bd0e43b1550baa5b232ab3e60b339d6da9f238fc034ce61051368b851",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/1897645e-58fc-46f1-ad4f-0cb69b8bb96b/file_downloaded"
+        },
+        {
+          "filename": "87_sermon_10.txt",
+          "sha256": "8e9796252e6b06f014bace473a8183055e66538e7188de7629e1185024f7a1d4",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/1d5b426b-f698-4dc8-a6f2-252c55488c9e/file_downloaded"
+        }
+      ],
+      "source_url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/1897645e-58fc-46f1-ad4f-0cb69b8bb96b/file_downloaded",
+      "split": "test",
+      "synthetic_target": true,
+      "translation_method": "Codex AI translation of the supplied Arabic excerpt",
+      "prediction": "Demons continue to look upon the sons of Adam, rebelling against them and deviating them from God's religion and the devotion of worship to Him. Iblis swore to that."
+    },
+    {
+      "arabic": "ليست بأقل من حاجتهم إليه في خلقه لهم ورزقهم وإن افتقارهم إليه في معافاته لأبدانهم وستره لعوراتهم وتأمينه لروعاتهم",
+      "attribution": "Abbas, Samah (2023), Sermon_audio_and_text_dataset (SAT), Mendeley Data, V1, doi:10.17632/fnz5bt24st.1",
+      "changes": "Three adjacent transcript chunks joined; English translation added; no Arabic spelling repairs",
+      "dataset_version": 1,
+      "document_id": "sat-sermon_10",
+      "domain": "khutbah",
+      "english": "It is no less than their need for Him to create and provide for them, and their dependence on Him to keep their bodies healthy, conceal their faults, and calm their fears.",
+      "id": "sat-sermon_10-172",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "quote_type": "unreviewed",
+      "review_status": "AI-only; bilingual human review pending",
+      "source": "https://data.mendeley.com/datasets/fnz5bt24st/1",
+      "source_filename": "172_sermon_10.txt",
+      "source_segments": [
+        {
+          "filename": "171_sermon_10.txt",
+          "sha256": "f14efcc10274c94be0b290e98857e2b3a539ffebdc4a82c6da6c143b3145c685",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/8cd73c7d-7fee-4ce8-9a7f-eadc4b0f98e9/file_downloaded"
+        },
+        {
+          "filename": "172_sermon_10.txt",
+          "sha256": "70b206fe51ea001d0f5f188082a386e8329464877884454199b537da6abb960d",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/4de76ae6-d8d7-4899-966b-9073570831ad/file_downloaded"
+        },
+        {
+          "filename": "173_sermon_10.txt",
+          "sha256": "a8f509354366afbb203de6638d1575691ecb5e572b8bbad716b0c2ff42da1f80",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/369a0b07-5f3b-4727-8f90-dab1094d8318/file_downloaded"
+        }
+      ],
+      "source_url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/4de76ae6-d8d7-4899-966b-9073570831ad/file_downloaded",
+      "split": "test",
+      "synthetic_target": true,
+      "translation_method": "Codex AI translation of the supplied Arabic excerpt",
+      "prediction": "Nothing less than their need for it in its creation for them and their sustenance, but their lack of it in its healing for them and its cover for their nakedness and security for their awesomeness."
+    },
+    {
+      "arabic": "وإما خبر عن كرامة الله لأهل توحيده وطاعته وما فعل بهم في الدنيا",
+      "attribution": "Abbas, Samah (2023), Sermon_audio_and_text_dataset (SAT), Mendeley Data, V1, doi:10.17632/fnz5bt24st.1",
+      "changes": "Three adjacent transcript chunks joined; English translation added; no Arabic spelling repairs",
+      "dataset_version": 1,
+      "document_id": "sat-sermon_10",
+      "domain": "khutbah",
+      "english": "Or an account of Allah's honoring those who affirm His oneness and obey Him, and what He did for them in this world.",
+      "id": "sat-sermon_10-258",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "quote_type": "unreviewed",
+      "review_status": "AI-only; bilingual human review pending",
+      "source": "https://data.mendeley.com/datasets/fnz5bt24st/1",
+      "source_filename": "258_sermon_10.txt",
+      "source_segments": [
+        {
+          "filename": "257_sermon_10.txt",
+          "sha256": "80f3f00b74a78c16a1d5b7fcee843bca3486cdca89377ed9cf69f7cb5c991237",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/e021a06b-58d7-4b7c-8f3d-ee164a599dbb/file_downloaded"
+        },
+        {
+          "filename": "258_sermon_10.txt",
+          "sha256": "c83ec714d71cf9fc695cd936b804852652721db63c42f3f913c26df8397f36de",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/ff1e992c-283a-4a8b-858f-b369ca93af91/file_downloaded"
+        },
+        {
+          "filename": "259_sermon_10.txt",
+          "sha256": "a8a0f4fcd6065e617ef3882b2f6e4560830fa95fc3d7c13ec2b00af05bd6e3e4",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/184d59e7-a7be-44d5-88bf-90dc2456d815/file_downloaded"
+        }
+      ],
+      "source_url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/ff1e992c-283a-4a8b-858f-b369ca93af91/file_downloaded",
+      "split": "test",
+      "synthetic_target": true,
+      "translation_method": "Codex AI translation of the supplied Arabic excerpt",
+      "prediction": "Is there any news of God's dignity for those who unite him and obey him, and what he has done to them in this world?"
+    },
+    {
+      "arabic": "بل هي حبور وسرور لا خوف فيها ولا حزن ولا ثبور يا عباد لا خوف عليكم اليوم ولا أنتم تحزنون",
+      "attribution": "Abbas, Samah (2023), Sermon_audio_and_text_dataset (SAT), Mendeley Data, V1, doi:10.17632/fnz5bt24st.1",
+      "changes": "Three adjacent transcript chunks joined; English translation added; no Arabic spelling repairs",
+      "dataset_version": 1,
+      "document_id": "sat-sermon_10",
+      "domain": "khutbah",
+      "english": "Rather, it is delight and joy, with no fear, sorrow, or ruin. O My servants, there is no fear for you today, nor shall you grieve.",
+      "id": "sat-sermon_10-344",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "quote_type": "unreviewed",
+      "review_status": "AI-only; bilingual human review pending",
+      "source": "https://data.mendeley.com/datasets/fnz5bt24st/1",
+      "source_filename": "344_sermon_10.txt",
+      "source_segments": [
+        {
+          "filename": "343_sermon_10.txt",
+          "sha256": "8f8ff2ba242fde9fe996466ac3eae00f4b2ed6d4ae3bf2f80da7e5517cfaa70d",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/94e0a229-8afd-4ccc-a34b-c02190c4679c/file_downloaded"
+        },
+        {
+          "filename": "344_sermon_10.txt",
+          "sha256": "5c979bab13be1b1931d025594dc5d0fbe01ee47e722ab6d089beaa079300cf28",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/daeecfb6-69c8-4c13-b32a-c3dbc3f2365a/file_downloaded"
+        },
+        {
+          "filename": "345_sermon_10.txt",
+          "sha256": "65ba4b8d90d9ca8b647ec7e05676e7b93dc4cfbda693b8495f7969304874eb44",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/47ced56e-6e2b-48fd-acde-531857a67918/file_downloaded"
+        }
+      ],
+      "source_url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/daeecfb6-69c8-4c13-b32a-c3dbc3f2365a/file_downloaded",
+      "split": "test",
+      "synthetic_target": true,
+      "translation_method": "Codex AI translation of the supplied Arabic excerpt",
+      "prediction": "But it is patience and joy, in which there is no fear, no grief, no patience, no fear on you, no fear on you today, nor do you grieve."
+    },
+    {
+      "arabic": "وأشد من ذلك تضييعها في الآثام ثم الندم بعد فوات الأوان وقوله صلى الله عليه وسلم",
+      "attribution": "Abbas, Samah (2023), Sermon_audio_and_text_dataset (SAT), Mendeley Data, V1, doi:10.17632/fnz5bt24st.1",
+      "changes": "Three adjacent transcript chunks joined; English translation added; no Arabic spelling repairs",
+      "dataset_version": 1,
+      "document_id": "sat-sermon_13",
+      "domain": "khutbah",
+      "english": "Worse still is wasting it in sins, then regretting it when it is too late. And his saying, peace and blessings be upon him:",
+      "id": "sat-sermon_13-92",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "quote_type": "unreviewed",
+      "review_status": "AI-only; bilingual human review pending",
+      "source": "https://data.mendeley.com/datasets/fnz5bt24st/1",
+      "source_filename": "92_sermon_13.txt",
+      "source_segments": [
+        {
+          "filename": "91_sermon_13.txt",
+          "sha256": "520aa6d4121c2ff5f9a84b8e8b10cc255174da456509258264def2786a75065b",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/fd18d660-5471-4c67-a61f-edd16188fe2e/file_downloaded"
+        },
+        {
+          "filename": "92_sermon_13.txt",
+          "sha256": "8e5e984856c90d9447dbe24b429ae88b595541f2bac75ae536a31bfe4193485a",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/5f36efc7-d6ac-4e9c-81e4-1836debc6e9f/file_downloaded"
+        },
+        {
+          "filename": "93_sermon_13.txt",
+          "sha256": "26e7d5b065531b09124992499fc728b89389f030bad2f1352aa3bda81e7b5ace",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/06ffd281-9838-4a63-ad0a-9938251dec77/file_downloaded"
+        }
+      ],
+      "source_url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/5f36efc7-d6ac-4e9c-81e4-1836debc6e9f/file_downloaded",
+      "split": "test",
+      "synthetic_target": true,
+      "translation_method": "Codex AI translation of the supplied Arabic excerpt",
+      "prediction": "More than that, you waste it in sin, then regret after it is too late, and say it , \"Pray upon Allah . \""
+    },
+    {
+      "arabic": "ولا يمتنع عن النفع والعطاء ومن أمثلة أولئك الرجال الأفذاذ حماد بن سلمة",
+      "attribution": "Abbas, Samah (2023), Sermon_audio_and_text_dataset (SAT), Mendeley Data, V1, doi:10.17632/fnz5bt24st.1",
+      "changes": "Three adjacent transcript chunks joined; English translation added; no Arabic spelling repairs",
+      "dataset_version": 1,
+      "document_id": "sat-sermon_13",
+      "domain": "khutbah",
+      "english": "And he does not refrain from benefiting others and giving. Among the examples of those outstanding men is Hammad ibn Salamah.",
+      "id": "sat-sermon_13-184",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "quote_type": "unreviewed",
+      "review_status": "AI-only; bilingual human review pending",
+      "source": "https://data.mendeley.com/datasets/fnz5bt24st/1",
+      "source_filename": "184_sermon_13.txt",
+      "source_segments": [
+        {
+          "filename": "183_sermon_13.txt",
+          "sha256": "078c2fb253a78bb2158ebcbd801e3d45e855f3b58ef74f211455f3a2dab1f493",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/e2791970-8fb2-45b1-bffd-26a93c23d194/file_downloaded"
+        },
+        {
+          "filename": "184_sermon_13.txt",
+          "sha256": "6a75c148753bbdf1d0d13dfd9d122c3dea5bc3d43440f5f976c5d34371c5a8d2",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/2f001b68-8688-4a05-a07b-1da132f313ff/file_downloaded"
+        },
+        {
+          "filename": "185_sermon_13.txt",
+          "sha256": "92c3dc047355464a91fa4362b2ed4786615b330c628ff9a484e53a72a168bcc4",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/29fd778b-36a6-4a11-aa4c-2ec04dc2f649/file_downloaded"
+        }
+      ],
+      "source_url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/2f001b68-8688-4a05-a07b-1da132f313ff/file_downloaded",
+      "split": "test",
+      "synthetic_target": true,
+      "translation_method": "Codex AI translation of the supplied Arabic excerpt",
+      "prediction": "And do not turn away from the benefit and the giving. Among the examples of those men who are in exile, Hamad the son of Selmah."
+    },
+    {
+      "arabic": "ولا يضيع أجر المؤمنين أحمده تعالى حمدا كثيرا طيبا مباركا فيه كما ينبغي لجلال وجهه ولعظيم سلطانه",
+      "attribution": "Abbas, Samah (2023), Sermon_audio_and_text_dataset (SAT), Mendeley Data, V1, doi:10.17632/fnz5bt24st.1",
+      "changes": "Three adjacent transcript chunks joined; English translation added; no Arabic spelling repairs",
+      "dataset_version": 1,
+      "document_id": "sat-sermon_13",
+      "domain": "khutbah",
+      "english": "He does not let the believers' reward go to waste. I praise Him, Most High, with abundant, good, and blessed praise, as befits the majesty of His countenance and the greatness of His authority.",
+      "id": "sat-sermon_13-276",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "quote_type": "unreviewed",
+      "review_status": "AI-only; bilingual human review pending",
+      "source": "https://data.mendeley.com/datasets/fnz5bt24st/1",
+      "source_filename": "276_sermon_13.txt",
+      "source_segments": [
+        {
+          "filename": "275_sermon_13.txt",
+          "sha256": "570d860f631e0e21f06196962b6b52ed9af34732ab164400be9bfc5294cbcb34",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/297c3af4-4cd2-48dc-b13f-798cfd845f5a/file_downloaded"
+        },
+        {
+          "filename": "276_sermon_13.txt",
+          "sha256": "48b52afcc94ab485f3328fa4cc0fe2dc6573f14ee37853b38a18c93ffe592ce2",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/6c6bbe26-a6a3-4206-8931-0c98d6a589ef/file_downloaded"
+        },
+        {
+          "filename": "277_sermon_13.txt",
+          "sha256": "361bb6a01c6300c70debd32dc53c2d9b44bb11b3032821509c0c33a77a4b38af",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/396b7df8-37c1-47ba-86df-fedeca627496/file_downloaded"
+        }
+      ],
+      "source_url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/6c6bbe26-a6a3-4206-8931-0c98d6a589ef/file_downloaded",
+      "split": "test",
+      "synthetic_target": true,
+      "translation_method": "Codex AI translation of the supplied Arabic excerpt",
+      "prediction": "And let not the reward of the believers be wasted upon His praise. Thank you very much. Blessed be in it, as is due to His Majesty, and to His Greatness."
+    },
+    {
+      "arabic": "لا يبقى في موقعه بل يتراجع ويخسر ويسوء حاله وتشين فعاله",
+      "attribution": "Abbas, Samah (2023), Sermon_audio_and_text_dataset (SAT), Mendeley Data, V1, doi:10.17632/fnz5bt24st.1",
+      "changes": "Three adjacent transcript chunks joined; English translation added; no Arabic spelling repairs",
+      "dataset_version": 1,
+      "document_id": "sat-sermon_13",
+      "domain": "khutbah",
+      "english": "He does not remain where he is; rather, he falls back and loses, his condition worsens, and his deeds become shameful.",
+      "id": "sat-sermon_13-368",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "quote_type": "unreviewed",
+      "review_status": "AI-only; bilingual human review pending",
+      "source": "https://data.mendeley.com/datasets/fnz5bt24st/1",
+      "source_filename": "368_sermon_13.txt",
+      "source_segments": [
+        {
+          "filename": "367_sermon_13.txt",
+          "sha256": "80f214e9aa515bfbe18d48c20700532d7767bdb4626dd0644622b06c8b07b244",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/911f27da-fe00-4ab0-b3f0-0dd74a46bab6/file_downloaded"
+        },
+        {
+          "filename": "368_sermon_13.txt",
+          "sha256": "189f1c932d292a8400c5f2fdb1ebb9f3b7d708e3054f90837512d7cfdbccef79",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/ef981c82-16c3-4f4d-bd3a-44b661c04d73/file_downloaded"
+        },
+        {
+          "filename": "369_sermon_13.txt",
+          "sha256": "a156c1a9b2ddefe9835177e8932413713d7ce131f95c4ac71aafa34f4736f5c0",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/5a0ae071-f0de-49fa-ac33-0948cb2cdc0b/file_downloaded"
+        }
+      ],
+      "source_url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/ef981c82-16c3-4f4d-bd3a-44b661c04d73/file_downloaded",
+      "split": "test",
+      "synthetic_target": true,
+      "translation_method": "Codex AI translation of the supplied Arabic excerpt",
+      "prediction": "It does not remain in its position, but it does back down, loses, worsens, and Chen is effective."
+    },
+    {
+      "arabic": "قال تبارك وتعالى كل من عليها فان ويبقى وجه ربك ذو الجلال والإكرام",
+      "attribution": "Abbas, Samah (2023), Sermon_audio_and_text_dataset (SAT), Mendeley Data, V1, doi:10.17632/fnz5bt24st.1",
+      "changes": "Three adjacent transcript chunks joined; English translation added; no Arabic spelling repairs",
+      "dataset_version": 1,
+      "document_id": "sat-sermon_14",
+      "domain": "khutbah",
+      "english": "He, Blessed and Exalted, said: Everyone upon it will perish, and the countenance of your Lord, Possessor of Majesty and Honor, will remain.",
+      "id": "sat-sermon_14-50",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "quote_type": "unreviewed",
+      "review_status": "AI-only; bilingual human review pending",
+      "source": "https://data.mendeley.com/datasets/fnz5bt24st/1",
+      "source_filename": "50_sermon_14.txt",
+      "source_segments": [
+        {
+          "filename": "49_sermon_14.txt",
+          "sha256": "faddb0ff1f777487d14cf928dd16245196ce0a51269e2120e033348fa09e00b3",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/7e3659a7-7bb2-487e-97fd-4c019fcf5380/file_downloaded"
+        },
+        {
+          "filename": "50_sermon_14.txt",
+          "sha256": "b3548db4b752de4d75bd10dd9991c9f0772dddaf3626bfad4a14cb71c3d69154",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/2ae79709-3183-482c-91ea-056fa9ff7906/file_downloaded"
+        },
+        {
+          "filename": "51_sermon_14.txt",
+          "sha256": "ed5875ca942eb6de69a360a73c6d16da8d318d359fa3ebf3dac63f7721b8b526",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/1b0fe129-3237-4db0-b778-dd747b26f928/file_downloaded"
+        }
+      ],
+      "source_url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/2ae79709-3183-482c-91ea-056fa9ff7906/file_downloaded",
+      "split": "test",
+      "synthetic_target": true,
+      "translation_method": "Codex AI translation of the supplied Arabic excerpt",
+      "prediction": "He said, \"Blessed be everyone on it. But the face of your Lord, who has honour and honour, remains."
+    },
+    {
+      "arabic": "وشر عقابه ولك أن تتصور أيها الإنسان ما بعد ذلك من البعث والنشور والعرض والجزاء والحساب والصراط المنصوب على متن جهنم",
+      "attribution": "Abbas, Samah (2023), Sermon_audio_and_text_dataset (SAT), Mendeley Data, V1, doi:10.17632/fnz5bt24st.1",
+      "changes": "Three adjacent transcript chunks joined; English translation added; no Arabic spelling repairs",
+      "dataset_version": 1,
+      "document_id": "sat-sermon_14",
+      "domain": "khutbah",
+      "english": "And the evil of its punishment. Imagine, O human being, what follows: resurrection and rising, presentation and recompense, reckoning, and the bridge stretched over Hell.",
+      "id": "sat-sermon_14-100",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "quote_type": "unreviewed",
+      "review_status": "AI-only; bilingual human review pending",
+      "source": "https://data.mendeley.com/datasets/fnz5bt24st/1",
+      "source_filename": "100_sermon_14.txt",
+      "source_segments": [
+        {
+          "filename": "99_sermon_14.txt",
+          "sha256": "5ebbca5e23bf0a597cb03da00c4a0e5d7891d43f8fa976636af4457f0190b361",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/dd33a248-2b73-4a9a-b98d-44b52dcbe6ad/file_downloaded"
+        },
+        {
+          "filename": "100_sermon_14.txt",
+          "sha256": "05fbc878aba0eb71ff665cac746098679ba092a5bbbe52f578143c1b1859e135",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/cf179c68-6a71-45e0-8f25-743155e2d69b/file_downloaded"
+        },
+        {
+          "filename": "101_sermon_14.txt",
+          "sha256": "b854e4dfa1dad8236030366264b067d02b6f70a3d747118ef3a2c74dbc36d918",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/d4ef65d8-d1a7-4097-8ef8-e3929f955f16/file_downloaded"
+        }
+      ],
+      "source_url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/cf179c68-6a71-45e0-8f25-743155e2d69b/file_downloaded",
+      "split": "test",
+      "synthetic_target": true,
+      "translation_method": "Codex AI translation of the supplied Arabic excerpt",
+      "prediction": "And the evil of his punishment, and it is for you to imagine, O man, after that, of resurrection, of proselytism, of breadth, of recompense, and of reckoning, and of reckoning, and of the guidance that is set upon aboard Hell."
+    },
+    {
+      "arabic": "وهو تعلق القلب بالله ثم بذل السبب ومن رحمة المولى سبحانه",
+      "attribution": "Abbas, Samah (2023), Sermon_audio_and_text_dataset (SAT), Mendeley Data, V1, doi:10.17632/fnz5bt24st.1",
+      "changes": "Three adjacent transcript chunks joined; English translation added; no Arabic spelling repairs",
+      "dataset_version": 1,
+      "document_id": "sat-sermon_14",
+      "domain": "khutbah",
+      "english": "It is the heart's attachment to Allah, followed by taking the necessary means. And among the mercy of the Lord, Glorified is He,",
+      "id": "sat-sermon_14-151",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "quote_type": "unreviewed",
+      "review_status": "AI-only; bilingual human review pending",
+      "source": "https://data.mendeley.com/datasets/fnz5bt24st/1",
+      "source_filename": "151_sermon_14.txt",
+      "source_segments": [
+        {
+          "filename": "150_sermon_14.txt",
+          "sha256": "406e12bd937b6e2a2b30d36d905a13b63d644fccd968aadafe0a3d8915fba910",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/2193efab-fe1c-474d-9d80-58e30ee15afe/file_downloaded"
+        },
+        {
+          "filename": "151_sermon_14.txt",
+          "sha256": "15444e9423227c97d1ff619af5041febe4ba7c6ae4da34cea120c2bf3e8c5858",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/71aa34d8-f316-4bc0-bbeb-f14be972dac3/file_downloaded"
+        },
+        {
+          "filename": "152_sermon_14.txt",
+          "sha256": "171a6a94647331ae8edbd7d73cdf281a2259e3f9ca579b66d0771c30001e2559",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/577999cc-9d7d-4998-8e59-886b2de0bd44/file_downloaded"
+        }
+      ],
+      "source_url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/71aa34d8-f316-4bc0-bbeb-f14be972dac3/file_downloaded",
+      "split": "test",
+      "synthetic_target": true,
+      "translation_method": "Codex AI translation of the supplied Arabic excerpt",
+      "prediction": "It is that the heart clings to Allah, and then He gives reason. And from the mercy of the Lord, hallowed be He."
+    },
+    {
+      "arabic": "وقال صلى الله عليه وسلم من صلى علي صلاة واحدة صلى الله عليه بها عشرا اللهم صل على محمد وعلى آل محمد",
+      "attribution": "Abbas, Samah (2023), Sermon_audio_and_text_dataset (SAT), Mendeley Data, V1, doi:10.17632/fnz5bt24st.1",
+      "changes": "Three adjacent transcript chunks joined; English translation added; no Arabic spelling repairs",
+      "dataset_version": 1,
+      "document_id": "sat-sermon_14",
+      "domain": "khutbah",
+      "english": "He, peace and blessings be upon him, said: Whoever sends one blessing upon me, Allah sends ten blessings upon him for it. O Allah, send blessings upon Muhammad and the family of Muhammad.",
+      "id": "sat-sermon_14-201",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "quote_type": "unreviewed",
+      "review_status": "AI-only; bilingual human review pending",
+      "source": "https://data.mendeley.com/datasets/fnz5bt24st/1",
+      "source_filename": "201_sermon_14.txt",
+      "source_segments": [
+        {
+          "filename": "200_sermon_14.txt",
+          "sha256": "4cd4ea8c783f5f32a0b2edf0687880cc1f5b858f5006d741b8eb316af76ddad8",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/f9c2bad5-e116-4033-86fc-f8cd7a810eb1/file_downloaded"
+        },
+        {
+          "filename": "201_sermon_14.txt",
+          "sha256": "8b564e82c0860b3a6ad3acccf9cbc4def20ae4803778c2cd4f2b2bd06b5772f8",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/738dc40d-4298-44e9-9104-57e7616573bf/file_downloaded"
+        },
+        {
+          "filename": "202_sermon_14.txt",
+          "sha256": "17a081e2455e9c0c0b5199af245f309579313103365bd22de463ed7cd76cbb10",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/a14260ce-10f6-4eeb-8704-0a9eb2252c6b/file_downloaded"
+        }
+      ],
+      "source_url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/738dc40d-4298-44e9-9104-57e7616573bf/file_downloaded",
+      "split": "test",
+      "synthetic_target": true,
+      "translation_method": "Codex AI translation of the supplied Arabic excerpt",
+      "prediction": "And Allah said, Peace be upon him. Who prays upon one prayer, and Allah prays upon him ten times, Allah prays upon Muhammad, and upon the family of Muhammad."
+    },
+    {
+      "arabic": "ويذكرون الله كثيرا اجعلوا طاعة الله لهم دسارا",
+      "attribution": "Abbas, Samah (2023), Sermon_audio_and_text_dataset (SAT), Mendeley Data, V1, doi:10.17632/fnz5bt24st.1",
+      "changes": "Three adjacent transcript chunks joined; English translation added; no Arabic spelling repairs",
+      "dataset_version": 1,
+      "document_id": "sat-sermon_28",
+      "domain": "khutbah",
+      "english": "And they remember Allah often. Make obedience to Allah a firm bond for them.",
+      "id": "sat-sermon_28-129",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "quote_type": "unreviewed",
+      "review_status": "AI-only; bilingual human review pending",
+      "source": "https://data.mendeley.com/datasets/fnz5bt24st/1",
+      "source_filename": "129_sermon_28.txt",
+      "source_segments": [
+        {
+          "filename": "128_sermon_28.txt",
+          "sha256": "33668a43accc4ccd5c77a3daedb8420957e6eb2338f367b206f2908560c2c5d1",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/1f4fd66b-db08-499a-b667-1a44dc7b6f05/file_downloaded"
+        },
+        {
+          "filename": "129_sermon_28.txt",
+          "sha256": "a638c5e7ef83485f1bceefa6c79cd7eddf5d5f17ab9b07d7ec9b12d56f38299d",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/b783bba2-bf4f-435a-ab60-cc3ef31e23e5/file_downloaded"
+        },
+        {
+          "filename": "130_sermon_28.txt",
+          "sha256": "6464be3d5cc9ad35062fc37563f3699caca2bfa5d1762dad7ed50a2a2ac26e9e",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/fcda3353-b217-4eb2-ab3f-8d1619031216/file_downloaded"
+        }
+      ],
+      "source_url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/b783bba2-bf4f-435a-ab60-cc3ef31e23e5/file_downloaded",
+      "split": "test",
+      "synthetic_target": true,
+      "translation_method": "Codex AI translation of the supplied Arabic excerpt",
+      "prediction": "And remember Allah many times. Make Allah's obedience to them darken."
+    },
+    {
+      "arabic": "صادقوهم تحدثوا إليهم فرغوا أنفسكم",
+      "attribution": "Abbas, Samah (2023), Sermon_audio_and_text_dataset (SAT), Mendeley Data, V1, doi:10.17632/fnz5bt24st.1",
+      "changes": "Three adjacent transcript chunks joined; English translation added; no Arabic spelling repairs",
+      "dataset_version": 1,
+      "document_id": "sat-sermon_28",
+      "domain": "khutbah",
+      "english": "Befriend them, speak to them, and make time for them.",
+      "id": "sat-sermon_28-258",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "quote_type": "unreviewed",
+      "review_status": "AI-only; bilingual human review pending",
+      "source": "https://data.mendeley.com/datasets/fnz5bt24st/1",
+      "source_filename": "258_sermon_28.txt",
+      "source_segments": [
+        {
+          "filename": "257_sermon_28.txt",
+          "sha256": "28deefa2dc83c197d34e356670a159670a5e96d9f55f0150ec51bba695023048",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/93050df9-c241-4058-87eb-2c8dc2f7a694/file_downloaded"
+        },
+        {
+          "filename": "258_sermon_28.txt",
+          "sha256": "41b621f3df43df9263eaac4f2ef384d3b95f0366861c71c4ce158431075a4738",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/91524477-b066-4b4d-887f-5e343626ca48/file_downloaded"
+        },
+        {
+          "filename": "259_sermon_28.txt",
+          "sha256": "2a203d2c19e9599390b57d9faf03fe4ef9194f3c4ff9b802e16861e727144ebe",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/8310b951-1062-4834-9e4f-d20f59c091c8/file_downloaded"
+        }
+      ],
+      "source_url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/91524477-b066-4b4d-887f-5e343626ca48/file_downloaded",
+      "split": "test",
+      "synthetic_target": true,
+      "translation_method": "Codex AI translation of the supplied Arabic excerpt",
+      "prediction": "Believe them. Talk to them. Make yourselves free."
+    },
+    {
+      "arabic": "وحسن الانصاف وترك تطلب العثرات",
+      "attribution": "Abbas, Samah (2023), Sermon_audio_and_text_dataset (SAT), Mendeley Data, V1, doi:10.17632/fnz5bt24st.1",
+      "changes": "Three adjacent transcript chunks joined; English translation added; no Arabic spelling repairs",
+      "dataset_version": 1,
+      "document_id": "sat-sermon_28",
+      "domain": "khutbah",
+      "english": "And fairness, and giving up the search for others' faults.",
+      "id": "sat-sermon_28-387",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "quote_type": "unreviewed",
+      "review_status": "AI-only; bilingual human review pending",
+      "source": "https://data.mendeley.com/datasets/fnz5bt24st/1",
+      "source_filename": "387_sermon_28.txt",
+      "source_segments": [
+        {
+          "filename": "386_sermon_28.txt",
+          "sha256": "63e875084ee7aae06a7e5c12100e67b21f38b817f8a5ea2b685631116fc50291",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/94a52ecd-fe3e-401a-8fd0-5f8c2fc1dbd7/file_downloaded"
+        },
+        {
+          "filename": "387_sermon_28.txt",
+          "sha256": "6fec383319082a591d697ccbb6fe636bade1f23f5701b0600d582bed7f87435d",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/0ad83ab8-cd35-41ec-8298-165de28af230/file_downloaded"
+        },
+        {
+          "filename": "388_sermon_28.txt",
+          "sha256": "bbd154d6ac5dd59d76dcd84fcf5ead11fcc263de15151e04be3c6802651087b8",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/161d1a0f-9441-43aa-bfcd-a61b91aa7ff8/file_downloaded"
+        }
+      ],
+      "source_url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/0ad83ab8-cd35-41ec-8298-165de28af230/file_downloaded",
+      "split": "test",
+      "synthetic_target": true,
+      "translation_method": "Codex AI translation of the supplied Arabic excerpt",
+      "prediction": "And the good of fairness, and let him seek troubles."
+    },
+    {
+      "arabic": "الوطنية أن يكون المواطن الصادق مرآة لوطنه",
+      "attribution": "Abbas, Samah (2023), Sermon_audio_and_text_dataset (SAT), Mendeley Data, V1, doi:10.17632/fnz5bt24st.1",
+      "changes": "Three adjacent transcript chunks joined; English translation added; no Arabic spelling repairs",
+      "dataset_version": 1,
+      "document_id": "sat-sermon_28",
+      "domain": "khutbah",
+      "english": "Patriotism means that the sincere citizen is a mirror of his homeland.",
+      "id": "sat-sermon_28-516",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "quote_type": "unreviewed",
+      "review_status": "AI-only; bilingual human review pending",
+      "source": "https://data.mendeley.com/datasets/fnz5bt24st/1",
+      "source_filename": "516_sermon_28.txt",
+      "source_segments": [
+        {
+          "filename": "515_sermon_28.txt",
+          "sha256": "bd71065b8192082b529211862173c8dafe6c29005987b6850461db28fb59f79f",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/cbb86e00-a784-45a5-893e-234d4615c6d1/file_downloaded"
+        },
+        {
+          "filename": "516_sermon_28.txt",
+          "sha256": "b4c8771587e2f954333c412679c1fae757d702171647c0354254ef7387a2601d",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/ab8c2b4b-9bfc-40a8-999d-c727ac7a9233/file_downloaded"
+        },
+        {
+          "filename": "517_sermon_28.txt",
+          "sha256": "78bffb6d1b6cb72cb1af14f68c026a35b0d123677594b57eec93b0d6d1d11be8",
+          "url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/da0ee994-b74d-4273-b4e3-22b2ea457b56/file_downloaded"
+        }
+      ],
+      "source_url": "https://data.mendeley.com/public-files/datasets/fnz5bt24st/files/ab8c2b4b-9bfc-40a8-999d-c727ac7a9233/file_downloaded",
+      "split": "test",
+      "synthetic_target": true,
+      "translation_method": "Codex AI translation of the supplied Arabic excerpt",
+      "prediction": "Nationalism is to be a true citizen, a mirror of his homeland."
+    }
+  ]
+}

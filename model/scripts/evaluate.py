@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import time
 from pathlib import Path
 
 
@@ -18,20 +19,25 @@ def main() -> None:
     parser.add_argument("--data", type=Path, required=True)
     parser.add_argument("--output", type=Path, default=Path("model/artifacts/evaluation.json"))
     parser.add_argument("--batch-size", type=int, default=8)
+    parser.add_argument("--revision", default="main")
     args = parser.parse_args()
 
     import sacrebleu
     import torch
-    from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
+    from model_loading import load_translation_model
 
     rows = [json.loads(line) for line in args.data.read_text(encoding="utf-8").splitlines() if line]
-    tokenizer = AutoTokenizer.from_pretrained(args.model)
-    model = AutoModelForSeq2SeqLM.from_pretrained(args.model)
+    if not rows or args.batch_size < 1:
+        parser.error("Non-empty data and a positive batch size are required")
+    tokenizer, model = load_translation_model(args.model, args.revision)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model.to(device).eval()
     predictions = []
+    started = time.perf_counter()
     for batch in batches([row["arabic"] for row in rows], args.batch_size):
-        encoded = tokenizer(batch, return_tensors="pt", padding=True, truncation=True, max_length=256)
+        encoded = tokenizer(batch, return_tensors="pt", padding=True, truncation=False)
+        if encoded["input_ids"].shape[1] > 256:
+            raise ValueError("Evaluation input exceeds 256 tokens; do not silently truncate it")
         encoded = {key: value.to(device) for key, value in encoded.items()}
         with torch.inference_mode():
             generated = model.generate(**encoded, max_new_tokens=256, num_beams=4)
@@ -47,6 +53,9 @@ def main() -> None:
     result = {
         "model": args.model,
         "examples": len(rows),
+        "synthetic_references": sum(bool(row.get("synthetic_target")) for row in rows),
+        "device": str(device),
+        "seconds": time.perf_counter() - started,
         "bleu": sacrebleu.corpus_bleu(predictions, [references]).score,
         "chrf_pp": sacrebleu.corpus_chrf(predictions, [references], word_order=2).score,
         "term_accuracy": found / len(expected) if expected else None,
@@ -62,4 +71,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

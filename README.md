@@ -14,6 +14,11 @@ extraction, review-candidate alignment, Marian fine-tuning, and religious-term
 evaluation. The live application remains on TranslateAPI.ai until the local
 model passes its promotion gates.
 
+A local SAT pilot now adds licensed Friday-sermon transcripts, explicitly
+AI-translated training targets, and a 4 GB GPU LoRA configuration. See
+[`model/README.md`](model/README.md) for reproduction and
+[`model/reports/sat-pilot/`](model/reports/sat-pilot/) for measured results.
+
 ## Requirements
 
 - Python 3.11+
